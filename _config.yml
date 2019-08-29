@@ -1,3 +1,7 @@
+plugins:
+  - jekyll-redirect-from
+  - jekyll-github-metadata
+  
 theme: jekyll-theme-cayman
 title: QMPY Toolkits
 github:
@@ -11,6 +15,3 @@ kramdown:
   parse_block_html: true
   syntax_highlighter_opts:
     disable: true
-    
-plugins:
-  - jekyll-commonmark
