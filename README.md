@@ -1,39 +1,50 @@
-## OQMD Toolkits 
-### API Python Wrapper
-### Docker Image of live qmdb (Internal Use Only)
+## API Python Wrapper
+## Docker Image of live qmdb
+### Step 1. Install Docker. 
+Docker is avaiable on different systems including Cloud, Linux, MacOS and Windows. The complete installation document can be found [here](https://docs.docker.com/install/). For MacOS and Windows users, a Docker Desktop is required.
 
-You can use the [editor on GitHub](https://github.com/mohanliu/oqmddoc.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-![Gif](/test.gif?raw=true "Work Flow")
-### Markdown
+### Step 2. Collect qmpy docker image. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The pre-built image is available at [Docker Hub](https://hub.docker.com/r/oqmduser/qmpy_live). You can simply pull the image by
+```bash
+docker pull oqmduser/qmpy_live
+```
+![Gif](/static/pull_image.gif?raw=true "Pull Docker Image"){:height="100%" width="100%"}
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Alternatively, you can also build your own docker image. The required Dockerfile and dependencies can be found from this [Github Repository](https://github.com/wolverton-research-group/qmpy_docker). In order to build a new docker image, you can type
+```bash
+git clone https://github.com/wolverton-research-group/qmpy_docker.git
+cd qmpy_docker
+docker build -t oqmduser/qmpy_live .
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Step 3. Start a qmpy environment.
 
-### Jekyll Themes
+Once we have the qmpy docker image, we can start a docker container. The required database environment variables will be saved in the `env.list` file. 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mohanliu/oqmddoc.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+To start a container, find out the path to your `env.list` file and then type
+```bash 
+docker run -it --rm --env-file <path_to_envlist> oqmduser/qmpy_live
+```
 
-### Support or Contact
+![Gif](/static/create_container.gif?raw=true "Create Docker Container"){:height="100%" width="100%"}
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The default entrypoint for this container is an `IPython` environment and you can start [Django](https://docs.djangoproject.com/en/1.8/) queries immediately.
+
+To overwrite the default entrypoint, you can do 
+```
+docker run -it --rm --env-file <path_to_envlist> --entrypoint "/bin/bash" oqmduser/qmpy_live
+```
+
+Also, if you want to transfer files from your local computer to the qmpy container or vice versa, you can perform the file synchronization implemented in docker. 
+
+You create a local path to store files you want to synchronize with docker container and then type:
+```bash
+docker run -it --rm --env-file <path_to_envlist> -v <some_local_path>:/workspace oqmduser/qmpy_live
+``` 
+
+_This docker image is designed for internal use only. Contact administrators to get the required environment variables to start a docker container._
+
+## Contact
+Mohan Liu: <mohan@u.northwestern.edu>
