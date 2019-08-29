@@ -1,4 +1,8 @@
 theme: jekyll-theme-cayman
+<<<<<<< HEAD
 title: QMPY Toolkits
 github:
   repository_url: https://github.com/wolverton-research-group
+=======
+markdown: GFM
+>>>>>>> c624fcf3b2dcb8a471c681291fd59fef2805fe16
