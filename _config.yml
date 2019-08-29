@@ -4,6 +4,7 @@ plugins:
   
 theme: jekyll-theme-cayman
 title: QMPY Toolkits
+url: https://github.com/mohanliu/oqmddoc/
 github:
   repository_url: https://github.com/wolverton-research-group
   
