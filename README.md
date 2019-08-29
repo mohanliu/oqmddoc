@@ -27,9 +27,7 @@ To start a container, find out the path to your `env.list` file and then type
 ```bash 
 docker run -it --rm --env-file <path_to_envlist> oqmduser/qmpy_live
 ```
-```markdown
 ![Gif](/static/create_container.gif?raw=true "Create Docker Container"){:height="100%" width="100%"}
-```
 
 The default entrypoint for this container is an `IPython` environment and you can start [Django](https://docs.djangoproject.com/en/1.8/) queries immediately.
 
