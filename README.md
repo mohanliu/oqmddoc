@@ -10,7 +10,7 @@ The pre-built image is available at [Docker Hub](https://hub.docker.com/r/oqmdus
 ```bash
 docker pull oqmduser/qmpy_live
 ```
-![Gif](/static/pull_image.gif?raw=true "Pull Docker Image"){:height="100%" width="100%"}
+![Gif](static/pull_image.gif?raw=true "Pull Docker Image"){:height="100%" width="100%"}
 
 Alternatively, you can also build your own docker image. The required Dockerfile and dependencies can be found from this [Github Repository](https://github.com/wolverton-research-group/qmpy_docker). In order to build a new docker image, you can type
 ```bash
@@ -27,7 +27,7 @@ To start a container, find out the path to your `env.list` file and then type
 ```bash 
 docker run -it --rm --env-file <path_to_envlist> oqmduser/qmpy_live
 ```
-![Gif](/static/create_container.gif?raw=true "Create Docker Container"){:height="100%" width="100%"}
+![Gif](static/create_container.gif?raw=true "Create Docker Container"){:height="100%" width="100%"}
 
 The default entrypoint for this container is an `IPython` environment and you can start [Django](https://docs.djangoproject.com/en/1.8/) queries immediately.
 
