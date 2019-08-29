@@ -2,6 +2,15 @@ theme: jekyll-theme-cayman
 title: QMPY Toolkits
 github:
   repository_url: https://github.com/wolverton-research-group
-markdown: GFM
+  
+highlighter: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
+  syntax_highlighter_opts:
+    disable: true
+    
 plugins:
   - jekyll-commonmark
