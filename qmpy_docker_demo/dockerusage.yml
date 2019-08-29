@@ -1,0 +1,311 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/mohan
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 100
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 25
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: QMPY Docker Demo
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1480
+    content: "\e]7;file://Mohans-MacBook-Air.local/Users/mohan\a\e[?1034h\e[01;32mI am an OQMD user\e[01;34m ~ $\e[00m "
+  - delay: 327
+    content: d
+  - delay: 104
+    content: o
+  - delay: 68
+    content: c
+  - delay: 72
+    content: k
+  - delay: 74
+    content: e
+  - delay: 92
+    content: r
+  - delay: 80
+    content: ' '
+  - delay: 76
+    content: r
+  - delay: 90
+    content: u
+  - delay: 70
+    content: 'n'
+  - delay: 60
+    content: ' '
+  - delay: 70
+    content: '-'
+  - delay: 89
+    content: i
+  - delay: 81
+    content: t
+  - delay: 98
+    content: ' '
+  - delay: 77
+    content: '-'
+  - delay: 92
+    content: '-'
+  - delay: 75
+    content: r
+  - delay: 71
+    content: m
+  - delay: 86
+    content: ' '
+  - delay: 75
+    content: '-'
+  - delay: 87
+    content: '-'
+  - delay: 74
+    content: e
+  - delay: 76
+    content: 'n'
+  - delay: 68
+    content: v
+  - delay: 98
+    content: '-'
+  - delay: 70
+    content: f
+  - delay: 78
+    content: i
+  - delay: 77
+    content: l
+  - delay: 80
+    content: e
+  - delay: 84
+    content: ' '
+  - delay: 88
+    content: e
+  - delay: 72
+    content: 'n'
+  - delay: 82
+    content: v
+  - delay: 63
+    content: .
+  - delay: 80
+    content: l
+  - delay: 94
+    content: i
+  - delay: 76
+    content: s
+  - delay: 86
+    content: t
+  - delay: 76
+    content: ' '
+  - delay: 82
+    content: o
+  - delay: 78
+    content: q
+  - delay: 84
+    content: m
+  - delay: 63
+    content: d
+  - delay: 70
+    content: u
+  - delay: 80
+    content: s
+  - delay: 71
+    content: e
+  - delay: 78
+    content: r
+  - delay: 89
+    content: /
+  - delay: 71
+    content: q
+  - delay: 82
+    content: m
+  - delay: 79
+    content: p
+  - delay: 84
+    content: 'y'
+  - delay: 70
+    content: _
+  - delay: 72
+    content: l
+  - delay: 60
+    content: i
+  - delay: 94
+    content: v
+  - delay: 86
+    content: e
+  - delay: 102
+    content: "\r\n"
+  - delay: 3010
+    content: "Python 2.7.16 |Anaconda, Inc.| (default, Aug 22 2019, 16:00:36) \r\nType \"copyright\", \"credits\" or \"license\" for more information.\r\n\r\nIPython 1.1.0 -- An enhanced Interactive Python.\r\n?         -> Introduction and overview of IPython's features.\r\n%quickref -> Quick reference.\r\nhelp      -> Python's own help system.\r\nobject?   -> Details about 'object', use 'object??' for extra details.\r\n"
+  - delay: 4449
+    content: "\r\n\e[0;32mIn [\e[1;32m1\e[0;32m]: \e[0m"
+  - delay: 1876
+    content: E
+  - delay: 224
+    content: 'n'
+  - delay: 122
+    content: t
+  - delay: 231
+    content: r
+  - delay: 167
+    content: 'y'
+  - delay: 373
+    content: .
+  - delay: 267
+    content: o
+  - delay: 137
+    content: bjects
+  - delay: 481
+    content: .
+  - delay: 279
+    content: a
+  - delay: 153
+    content: l
+  - delay: 138
+    content: l
+  - delay: 636
+    content: (
+  - delay: 162
+    content: )
+  - delay: 368
+    content: "\r\n"
+  - delay: 24
+    content: "\e[0;31mOut[\e[1;31m1\e[0;31m]: \e[0m[<Entry: 1603 - LaF3>, <Entry: 1604 - CeF3>, <Entry: 1605 - LiPH2O3>, <Entry: 1606 - BaTeS3>, <Entry: 1607 - LiNdP4O12>, <Entry: 1608 - Ca3Si2H6O10>, <Entry: 1609 - NaClO2>, <Entry: 1610 - Cs3MnCl5>, <Entry: 1611 - Ca5Ga2As6>, <Entry: 1612 - Yb2Fe3O7>, <Entry: 1613 - Cs3Re2Cl10O>, <Entry: 1614 - NaTeH6O6F>, <Entry: 1615 - GeS2>, <Entry: 1616 - GaS>, <Entry: 1617 - KTcO4>, <Entry: 1618 - KReO4>, <Entry: 1619 - OsO4>, <Entry: 1620 - Fe3Sn2>, <Entry: 1621 - RbLi2Be2F7>, <Entry: 1622 - CeBiS2O>, '...(remaining elements truncated)...']\r\n\r\n\e[0;32mIn [\e[1;32m2\e[0;32m]: \e[0m"
+  - delay: 1409
+    content: Entry.objects.all()
+  - delay: 374
+    content: "\b \b"
+  - delay: 181
+    content: "\b \b"
+  - delay: 147
+    content: "\b \b"
+  - delay: 131
+    content: "\b \b"
+  - delay: 350
+    content: "\b \b"
+  - delay: 235
+    content: c
+  - delay: 223
+    content: o
+  - delay: 125
+    content: u
+  - delay: 222
+    content: 'n'
+  - delay: 151
+    content: t
+  - delay: 512
+    content: (
+  - delay: 156
+    content: )
+  - delay: 399
+    content: "\r\n"
+  - delay: 257
+    content: "\e[0;31mOut[\e[1;31m2\e[0;31m]: \e[0m945755\r\n\r\n\e[0;32mIn [\e[1;32m3\e[0;32m]: \e[0m"
+  - delay: 754
+    content: e
+  - delay: 205
+    content: x
+  - delay: 133
+    content: i
+  - delay: 135
+    content: t
+  - delay: 246
+    content: "\r\n"
+  - delay: 999
+    content: "\e]7;file://Mohans-MacBook-Air.local/Users/mohan\a\e[01;32mI am an OQMD user\e[01;34m ~ $\e[00m "
