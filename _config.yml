@@ -3,3 +3,5 @@ title: QMPY Toolkits
 github:
   repository_url: https://github.com/wolverton-research-group
 markdown: GFM
+plugins:
+  - jekyll-commonmark
