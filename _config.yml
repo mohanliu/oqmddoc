@@ -3,12 +3,12 @@ plugins:
   - jekyll-github-metadata
   
 theme: jekyll-theme-cayman
-title: QMPY Toolkits
+title: OQMD Toolkits
 url: https://github.com/mohanliu/oqmddoc/
 github:
   repository_url: https://github.com/wolverton-research-group
   
-highlighter: false
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
