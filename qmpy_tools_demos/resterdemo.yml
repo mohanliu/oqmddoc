@@ -1,0 +1,535 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/mohan
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 100
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 40
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: QMPY Rester Demo
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1028
+    content: "\e]7;file://Mohans-MacBook-Air.local/Users/mohan\a\e[?1034h\e[01;32mI am an OQMD user\e[01;34m ~ $\e[00m "
+  - delay: 114
+    content: i
+  - delay: 176
+    content: p
+  - delay: 136
+    content: 'y'
+  - delay: 124
+    content: t
+  - delay: 32
+    content: h
+  - delay: 112
+    content: o
+  - delay: 144
+    content: 'n'
+  - delay: 87
+    content: "\r\n"
+  - delay: 485
+    content: "\e]0;IPython: Users/mohan\aPython 3.7.0 (default, Jun 28 2018, 07:39:16) \r\nType 'copyright', 'credits' or 'license' for more information\r\nIPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.\r\n\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m1\e[0;38;5;28m]: \e[8D\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 15
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[10A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 764
+    content: "\e[?25l\e[?7l\e[0mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 96
+    content: "\e[?25l\e[?7l\e[0mm\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 95
+    content: "\e[?25l\e[?7l\e[0mp\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 177
+    content: "\e[?25l\e[?7l\e[0mo\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 112
+    content: "\e[?25l\e[?7l\e[0mr\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 160
+    content: "\e[?25l\e[?7l\e[0mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[?7l\e[6D\e[0;38;5;28;1mimport\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 328
+    content: "\e[?25l\e[?7l\e[0;38;5;32;1mq\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 583
+    content: "\e[?25l\e[?7l\e[0;38;5;32;1mm\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 175
+    content: "\e[?25l\e[?7l\e[0;38;5;32;1mp\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 226
+    content: "\e[?25l\e[?7l\e[0;38;5;32;1my\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 183
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 58
+    content: "\e[?25l\e[?7l\e[0;38;5;32;1m_rester\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 758
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 129
+    content: "\e[?25l\e[?7l\e[0ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 127
+    content: "\e[?25l\e[?7l\b\e[0;38;5;28;1mas\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 127
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 425
+    content: "\e[?25l\e[?7l\e[0;38;5;32;1mq\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 127
+    content: "\e[?25l\e[?7l\e[0;38;5;32;1mr\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 508
+    content: "\e[?25l\e[?7l\e[32D\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m1\e[0;38;5;28m]: \e[0;38;5;28;1mimport\e[0m \e[0;38;5;32;1mqmpy_rester\e[0m \e[0;38;5;28;1mas\e[0m \e[0;38;5;32;1mqr\e[32D\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 103
+    content: "\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m2\e[0;38;5;28m]: \e[8D\e[8C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[8A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1033
+    content: "\e[?25l\e[?7l\e[0mw\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 79
+    content: "\e[?25l\e[?7l\e[0mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 144
+    content: "\e[?25l\e[?7l\e[0mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 137
+    content: "\e[?25l\e[?7l\e[3D\e[0;38;5;28;1mwith\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 64
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 74
+    content: "\e[?25l\e[?7l\e[0mq\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 55
+    content: "\e[?25l\e[?7l\e[0mr\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 98
+    content: "\e[?25l\e[?7l\e[0m.\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 75
+    content: "\e[?25l\e[?7l\e[0mQ\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 303
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[?7l\e[0mMPYRester\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 93
+    content: "\e[?25l\e[?7l\e[0m(\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 74
+    content: "\e[?25l\e[?7l\b\e[0;38;5;0;48;5;152m()\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 52
+    content: "\e[?25l\e[?7l\e[2D\e[0m()\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 81
+    content: "\e[?25l\e[?7l\e[0ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 43
+    content: "\e[?25l\e[?7l\b\e[0;38;5;28;1mas\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 56
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 44
+    content: "\e[?25l\e[?7l\e[0mq\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 41
+    content: "\e[?25l\e[?7l\e[0m:\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 62
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[0;38;5;28m   ...: \e[0m    \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 56
+    content: "\e[?25l\e[?7l\e[0mk\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 57
+    content: "\e[?25l\e[?7l\e[0mw\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 67
+    content: "\e[?25l\e[?7l\e[0ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 81
+    content: "\e[?25l\e[?7l\e[0mr\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 75
+    content: "\e[?25l\e[?7l\e[0mg\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 58
+    content: "\e[?25l\e[?7l\e[0ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 61
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 52
+    content: "\e[?25l\e[?7l\e[0m=\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 74
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 55
+    content: "\e[?25l\e[?7l\e[0m{\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 61
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 75
+    content: "\e[?25l\e[?7l\e[0;38;5;130me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 59
+    content: "\e[?25l\e[?7l\e[0;38;5;130ml\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 84
+    content: "\e[?25l\e[?7l\e[0;38;5;130me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 65
+    content: "\e[?25l\e[?7l\e[0;38;5;130mm\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 81
+    content: "\e[?25l\e[?7l\e[0;38;5;130me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 72
+    content: "\e[?25l\e[?7l\e[0;38;5;130mn\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 51
+    content: "\e[?25l\e[?7l\e[0;38;5;130mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 74
+    content: "\e[?25l\e[?7l\e[0;38;5;130m_\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 70
+    content: "\e[?25l\e[?7l\e[0;38;5;130ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 56
+    content: "\e[?25l\e[?7l\e[0;38;5;130me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 82
+    content: "\e[?25l\e[?7l\e[0;38;5;130mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 75
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 84
+    content: "\e[?25l\e[?7l\e[0m:\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 75
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[?7l\e[0;38;5;130mL\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 73
+    content: "\e[?25l\e[?7l\e[0;38;5;130mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 59
+    content: "\e[?25l\e[?7l\e[0;38;5;130m,\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 78
+    content: "\e[?25l\e[?7l\e[0;38;5;130mM\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 65
+    content: "\e[?25l\e[?7l\e[0;38;5;130mn\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 71
+    content: "\e[?25l\e[?7l\e[0;38;5;130m,\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 66
+    content: "\e[?25l\e[?7l\e[0;38;5;130mO\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 65
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[?7l\e[0m,\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 92
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 94
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[?7l\e[0;38;5;130ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[?7l\e[0;38;5;130mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 59
+    content: "\e[?25l\e[?7l\e[0;38;5;130ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 77
+    content: "\e[?25l\e[?7l\e[0;38;5;130mb\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 75
+    content: "\e[?25l\e[?7l\e[0;38;5;130mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[?7l\e[0;38;5;130ml\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[?7l\e[0;38;5;130mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 53
+    content: "\e[?25l\e[?7l\e[0;38;5;130mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[?7l\e[0;38;5;130my\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 72
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[?7l\e[0m:\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 71
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 53
+    content: "\e[?25l\e[?7l\e[0;38;5;130m<\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 84
+    content: "\e[?25l\e[?7l\e[0;38;5;130m0\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 79
+    content: "\e[?25l\e[?7l\e[0;38;5;130m.\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 52
+    content: "\e[?25l\e[?7l\e[0;38;5;130m1\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 67
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 64
+    content: "\e[?25l\e[?7l\e[0m,\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 68
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 52
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 54
+    content: "\e[?25l\e[?7l\e[0;38;5;130mn\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 89
+    content: "\e[?25l\e[?7l\e[0;38;5;130mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 43
+    content: "\e[?25l\e[?7l\e[0;38;5;130my\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 78
+    content: "\e[?25l\e[?7l\e[0;38;5;130mp\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 59
+    content: "\e[?25l\e[?7l\e[0;38;5;130me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 95
+    content: "\e[?25l\e[?7l\e[0;38;5;130ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 85
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[?7l\e[0m:\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 44
+    content: "\e[?25l\e[?7l\e[0;38;5;130m3\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 68
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 92
+    content: "\e[?25l\e[?7l\e[58D\e[0;38;5;0;48;5;152m{\e[57C}\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 82
+    content: "\e[?25l\e[?7l\e[59D\e[0m{\e[57C}\e[0m\r\r\n\e[0;38;5;28m   ...: \e[0m    \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[?7l\e[0ml\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 74
+    content: "\e[?25l\e[?7l\e[0mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 51
+    content: "\e[?25l\e[?7l\e[0ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 90
+    content: "\e[?25l\e[?7l\e[3D\e[0;38;5;28mlist\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[?7l\e[4D\e[0mlist_\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 75
+    content: "\e[?25l\e[?7l\e[0mo\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 77
+    content: "\e[?25l\e[?7l\e[0mf\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 81
+    content: "\e[?25l\e[?7l\e[0m_\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 47
+    content: "\e[?25l\e[?7l\e[0md\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 61
+    content: "\e[?25l\e[?7l\e[0ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 51
+    content: "\e[?25l\e[?7l\e[0mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 74
+    content: "\e[?25l\e[?7l\e[0ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 59
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[?7l\e[0m=\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 73
+    content: "\e[?25l\e[?7l\e[0m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 56
+    content: "\e[?25l\e[?7l\e[0mq\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 64
+    content: "\e[?25l\e[?7l\e[0m.\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[?7l\e[0mg\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 79
+    content: "\e[?25l\e[?7l\e[0me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 58
+    content: "\e[?25l\e[?7l\e[0mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[?7l\e[0m_\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 74
+    content: "\e[?25l\e[?7l\e[0mo\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 53
+    content: "\e[?25l\e[?7l\e[0mq\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 71
+    content: "\e[?25l\e[?7l\e[0mm\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 59
+    content: "\e[?25l\e[?7l\e[0md\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 71
+    content: "\e[?25l\e[?7l\e[0m_\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 79
+    content: "\e[?25l\e[?7l\e[0mp\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 47
+    content: "\e[?25l\e[?7l\e[0mh\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 47
+    content: "\e[?25l\e[?7l\e[0ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 68
+    content: "\e[?25l\e[?7l\e[0ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 67
+    content: "\e[?25l\e[?7l\e[0me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 77
+    content: "\e[?25l\e[?7l\e[0ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 50
+    content: "\e[?25l\e[?7l\e[0m(\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 83
+    content: "\e[?25l\e[?7l\e[0m*\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 58
+    content: "\e[?25l\e[?7l\e[0m*\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 71
+    content: "\e[?25l\e[?7l\e[0mk\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 95
+    content: "\e[?25l\e[?7l\e[0mw\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 54
+    content: "\e[?25l\e[?7l\e[0ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 52
+    content: "\e[?25l\e[?7l\e[0mr\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 56
+    content: "\e[?25l\e[?7l\e[0mg\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[?7l\e[0ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 45
+    content: "\e[?25l\e[?7l\e[9D\e[0;38;5;0;48;5;152m(\e[8C)\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 69
+    content: "\e[?25l\e[?7l\e[10D\e[0m(\e[8C)\e[0m\r\r\n\e[0;38;5;28m   ...: \e[0m    \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 208
+    content: "\e[?25l\e[?7l\e[3A\e[12D\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m2\e[0;38;5;28m]: \e[0;38;5;28;1mwith\e[0m \e[0mqr\e[0m.\e[0mQMPYRester\e[0m()\e[0m \e[0;38;5;28;1mas\e[0m \e[0mq\e[0m:\e[0m\r\r\n\e[0;38;5;28m   ...: \e[0m    \e[0mkwargs\e[0m \e[0m=\e[0m \e[0m{\e[0;38;5;130m'element_set'\e[0m:\e[0;38;5;130m'Li,Mn,O'\e[0m,\e[0m \e[0;38;5;130m'stability'\e[0m:\e[0;38;5;130m'<0.1'\e[0m,\e[0m \e[0;38;5;130m'ntypes'\e[0m:\e[0;38;5;130m'3'\e[0m}\e[0m\r\r\n\e[0;38;5;28m   ...: \e[0m    \e[0mlist_of_data\e[0m \e[0m=\e[0m \e[0mq\e[0m.\e[0mget_oqmd_phases\e[0m(\e[0m**\e[0mkwargs\e[0m)\e[0m\r\r\n\e[0;38;5;28m   ...: \e[0m    \e[12D\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004lYour filters are:\r\n    filter=element_set=Li,Mn,O AND stability<0.1 AND ntypes=3\r\nProceed? [Y/n]:"
+  - delay: 204
+    content: 'y'
+  - delay: 49
+    content: "\r\n"
+  - delay: 508
+    content: "\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m3\e[0;38;5;28m]: \e[8D\e[8C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 806
+    content: "\e[?25l\e[?7l\e[0ml\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 88
+    content: "\e[?25l\e[?7l\e[0mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 120
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[10C\e[0;38;5;0;48;5;250m license           list_of_data      \e[0m\r\r\n\e[10C\e[0;38;5;0;48;5;250m list              live_qmpy_docker/ \e[0m\r\r\n\r\r\n\r\r\n\e[5A\e[10C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 138
+    content: "\e[?25l\e[?7l\e[0mcense\e[0m\r\r\n\e[10C\e[0;38;5;15;48;5;102m license          \e[0m\r\r\n\r\r\n\e[10C\e[0;38;5;0;48;5;248m <unknown> \e[3A\e[6D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 173
+    content: "\e[?25l\e[?7l\e[7D\e[0;38;5;28mlist\e[0m   \e[0m\r\r\n\e[10C\e[0;38;5;0;48;5;250m license          \e[0m\r\r\n\e[10C\e[0;38;5;15;48;5;102m list             \e[2A\e[16D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 172
+    content: "\e[?25l\e[?7l\e[4D\e[0mlist_of_data\e[0m\r\r\n\e[28C\e[0;38;5;15;48;5;102m list_of_data     \e[0m\r\r\n\e[10C\e[0;38;5;0;48;5;250m list             \e[2A\e[8D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 151
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[10C\e[0m                                     \e[0m\r\r\n\e[10C\e[0m                                     \e[0m\r\r\n\e[10C\e[0m           \e[3A\b\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 42
+    content: "\e[?25l\e[?7l\e[0m[\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 64
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 52
+    content: "\e[?25l\e[?7l\e[0;38;5;130mm\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 45
+    content: "\e[?25l\e[?7l\e[0;38;5;130me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 73
+    content: "\e[?25l\e[?7l\e[0;38;5;130mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 68
+    content: "\e[?25l\e[?7l\e[0;38;5;130ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 69
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 77
+    content: "\e[?25l\e[?7l\e[7D\e[0;38;5;0;48;5;152m[\e[6C]\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 569
+    content: "\e[?25l\e[?7l\e[28D\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m3\e[0;38;5;28m]: \e[0mlist_of_data\e[0m[\e[0;38;5;130m'meta'\e[0m]\e[28D\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l\e[0m\e[?7h\e[0;38;5;88mOut[\e[0;38;5;9;1m3\e[0;38;5;88m]: \e[0m\r\n{'query': {'representation': '/formationenergy?filter=element_set=Li,Mn,O%20AND%20stability%3C0.1%20AND%20ntypes=3'},\r\n 'api_version': '1.0',\r\n 'time_stamp': '2019-09-02 20:57:09',\r\n 'data_returned': 22,\r\n 'data_available': 22,\r\n 'comments': '',\r\n 'query_tree': '',\r\n 'more_data_available': False}\r\n\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m4\e[0;38;5;28m]: \e[8D\e[8C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 963
+    content: "\e[?25l\e[?7l\e[0ml\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 59
+    content: "\e[?25l\e[?7l\e[0mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 68
+    content: "\e[?25l\e[?7l\e[0ms\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 58
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 6
+    content: "\e[?25l\e[?7l\e[3D\e[0;38;5;28mlist\e[0m\r\r\n\e[12C\e[0;38;5;0;48;5;250m list         \e[0m\r\r\n\e[12C\e[0;38;5;0;48;5;250m list_of_data \e[0m\r\r\n\r\r\n\r\r\n\e[5A\e[12C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 106
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[12C\e[0;38;5;15;48;5;102m list        \e[0m\r\r\n\r\r\n\e[12C\e[0;38;5;0;48;5;248m <unknown> \e[3A\e[11D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 78
+    content: "\e[?25l\e[?7l\e[4D\e[0mlist_of_data\e[0m\r\r\n\e[12C\e[0;38;5;0;48;5;250m list        \e[0m\r\r\n\e[12C\e[0;38;5;15;48;5;102m list_of_data\e[2A\e[5D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 92
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[12C\e[0m              \e[0m\r\r\n\e[12C\e[0m              \e[0m\r\r\n\e[12C\e[0m           \e[3A\e[3D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[?7l\e[0m[\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 77
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 92
+    content: "\e[?25l\e[?7l\e[0;38;5;130md\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[?7l\e[0;38;5;130ma\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 55
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?7l\e[0;38;5;130mta\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 89
+    content: "\e[?25l\e[?7l\e[0;38;5;130m'\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 81
+    content: "\e[?25l\e[?7l\e[7D\e[0;38;5;0;48;5;152m[\e[6C]\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 54
+    content: "\e[?25l\e[?7l\e[8D\e[0m[\e[6C][\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 69
+    content: "\e[?25l\e[?7l\e[0;38;5;28m0\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 85
+    content: "\e[?25l\e[?7l\e[2D\e[0;38;5;0;48;5;152m[\e[C]\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 587
+    content: "\e[?25l\e[?7l\e[31D\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m4\e[0;38;5;28m]: \e[0mlist_of_data\e[0m[\e[0;38;5;130m'data'\e[0m][\e[0;38;5;28m0\e[0m]\e[31D\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l\e[0m\e[?7h\e[0;38;5;88mOut[\e[0;38;5;9;1m4\e[0;38;5;88m]: \e[0m\r\n{'name': 'LiMnO2',\r\n 'entry_id': 2990,\r\n 'calculation_id': 22653,\r\n 'icsd_id': 15105,\r\n 'formationenergy_id': 4078200,\r\n 'composition': 'Li1 Mn1 O2',\r\n 'composition_generic': 'ABC2',\r\n 'prototype': None,\r\n 'spacegroup': 'Pmmn',\r\n 'volume': 73.9042,\r\n 'ntypes': 3,\r\n 'natoms': 8,\r\n 'unit_cell': [[2.830729, 0.0, 0.0],\r\n  [0.0, 5.751257, 0.0],\r\n  [0.0, 0.0, 4.539501]],\r\n 'sites': ['Li @ 0 0.506 0',\r\n  'Li @ 0.5 0.744 0.5',\r\n  'Mn @ 0 0.988 0',\r\n  'Mn @ 0.5 0.262 0.5',\r\n  'O @ 0.5 0.226 0',\r\n  'O @ 0.5 0.762 0',\r\n  'O @ 0 0.0236 0.5',\r\n  'O @ 0 0.488 0.5'],\r\n 'band_gap': 1.032,\r\n 'delta_e': -2.11809191724234,\r\n 'stability': 0.001075089375,\r\n 'fit': 'standard',\r\n 'calculation_label': 'static'}\r\n\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m5\e[0;38;5;28m]: \e[8D\e[8C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 960
+    content: "\e[?25l\e[?7l\e[0me\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 78
+    content: "\e[?25l\e[?7l\e[0mx\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 56
+    content: "\e[?25l\e[?7l\e[0mi\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 43
+    content: "\e[?25l\e[?7l\e[0mt\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 73
+    content: "\e[?25l\e[?7l\e[12D\e[0m\e[J\e[0;38;5;28mIn [\e[0;38;5;10;1m5\e[0;38;5;28m]: \e[0mexit\e[12D\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 109
+    content: "\e]7;file://Mohans-MacBook-Air.local/Users/mohan\a\e[01;32mI am an OQMD user\e[01;34m ~ $\e[00m "
